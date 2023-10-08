@@ -1,3 +1,4 @@
+// Import necessary dependencies.
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from "react-redux";
@@ -6,9 +7,13 @@ import App from './App';
 import store from "./redux/store";
 import reportWebVitals from './reportWebVitals';
 
+// Create a root element for rendering the React application.
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Use the ReactDOM createRoot API to render the React application.
 root.render(
   <React.StrictMode>
+    {/* Wrap the application in the 'Provider' component to provide access to the Redux store. */}
     <Provider store={store}>
     <App />
     </Provider>
